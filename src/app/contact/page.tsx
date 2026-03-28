@@ -52,7 +52,8 @@ export default function ContactPage() {
               <h2 className="text-2xl font-semibold text-[#7A8B74] mb-4 heading-serif">
                 Visit Our Shop
               </h2>
-              <address className="not-italic space-y-3 text-lg text-[#2C2C22]">
+              <div className="flex items-start gap-4">
+              <address className="not-italic space-y-3 text-lg text-[#2C2C22] flex-1">
                 <p>
                   <span className="font-medium">Address:</span>
                   <br />
@@ -71,6 +72,16 @@ export default function ContactPage() {
                   </a>
                 </p>
               </address>
+              <div className="w-32 h-24 md:w-40 md:h-28 flex-shrink-0 rounded-xl overflow-hidden shadow-sm border border-[#f0e8e0]">
+                <Image
+                  src="/images/storefront-valentines-snow.jpg"
+                  alt="Four Peas in a Pod Boutique storefront"
+                  width={160}
+                  height={112}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              </div>
             </div>
 
             <div>
