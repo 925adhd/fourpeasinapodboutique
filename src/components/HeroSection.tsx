@@ -94,13 +94,14 @@ export default function HeroSection() {
 
           <div className="hero-reveal hero-reveal-4 flex flex-col sm:flex-row gap-3 mt-5 w-full sm:w-auto">
             <Button
-              href={MAPS_URL}
-              external
+              href="#visit"
               size="lg"
               variant="white"
               className="btn-hero-primary"
             >
-              <MapPin className="w-4 h-4" /> Get Directions & Stop In Today
+              <MapPin className="w-4 h-4 md:inline hidden" />
+              <span className="md:hidden">Visit Us Today</span>
+              <span className="hidden md:inline">Get Directions &amp; Stop In Today</span>
             </Button>
             <Button
               href="/community"

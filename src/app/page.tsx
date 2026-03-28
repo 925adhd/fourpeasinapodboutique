@@ -276,7 +276,7 @@ export default function Home() {
       </div>
 
       {/* ───── STOREFRONT ───── */}
-      <div className="max-w-5xl mx-auto px-4">
+      <div id="visit" className="max-w-5xl mx-auto px-4">
         <div className="rounded-3xl overflow-hidden shadow-sm border border-[#f0e8e0]">
           <Image
             src="/images/storefront-valentines-snow.jpg"
@@ -337,7 +337,7 @@ export default function Home() {
       </SectionWrapper>
 
       {/* ───── FINAL CTA ───── */}
-      <section className="cta-gradient relative overflow-hidden rounded-3xl max-w-5xl mx-auto my-10 px-6 py-16 md:py-20 text-center">
+      <section className="cta-gradient relative overflow-hidden rounded-3xl max-w-5xl mx-auto my-10 px-6 py-10 md:py-14 text-center">
         <div
           className="blob-bg bg-white w-[400px] h-[300px] top-[-100px] right-[-100px]"
           style={{ position: "absolute", opacity: 0.08 }}
@@ -349,22 +349,20 @@ export default function Home() {
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 heading-serif relative z-10">
           Come See What Everyone&apos;s Loving
         </h2>
-        <p className="text-lg text-white/95 mb-8 max-w-md mx-auto relative z-10">
+        <p className="text-lg text-white/95 max-w-md mx-auto relative z-10 mb-3">
           Stop in, look around, and find something you didn&apos;t know you
           needed{" "}
           <span className="heart-pulse">
             <Heart className="inline w-5 h-5 fill-white text-white" />
           </span>
         </p>
-        <Button
-          href={MAPS_URL}
-          external
-          size="lg"
-          variant="white"
-          className="relative z-10"
-        >
-          <MapPin className="w-5 h-5" /> Get Directions Now
-        </Button>
+        <Image
+          src="/images/four-peas-in-a-pod-illustration.png"
+          alt="Four peas in a pod illustration"
+          width={100}
+          height={50}
+          className="mx-auto relative z-10 opacity-80"
+        />
       </section>
     </>
   );

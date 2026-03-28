@@ -88,9 +88,41 @@ export default function AboutPage() {
         </div>
       </SectionWrapper>
 
+      {/* The Founders */}
+      <SectionWrapper className="!py-8 md:!py-10">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row-reverse gap-6 md:gap-8 items-center">
+          <div className="flex-1 space-y-3 text-center md:text-left">
+            <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif">
+              Why &ldquo;Four Peas in a Pod&rdquo;?
+            </h2>
+            <p className="text-base md:text-lg text-[#2C2C22] leading-relaxed">
+              The name comes from the four women at the heart of it all — Jessi
+              Fentress, her mother Stephanie Slayton, Jessica Lowe, and Lindsey
+              Miller. Each brings something unique: Stephanie&apos;s experience
+              running her own business, Jessica&apos;s marketing expertise,
+              Lindsey&apos;s years running &ldquo;Little Stitches,&rdquo; and
+              Jessi&apos;s drive and vision. Together, they&apos;re four peas in
+              a pod — and that bond is what makes this boutique feel like more
+              than just a store.
+            </p>
+          </div>
+          <div className="flex-1 flex justify-center">
+            <div className="about-image-wrap rounded-2xl overflow-hidden shadow-md border-2 border-white/60">
+              <Image
+                src="/images/boutique-founders-portrait.webp"
+                alt="Founders of Four Peas in a Pod Boutique — Jessi Fentress, Stephanie Slayton, and Jessica Lowe"
+                width={400}
+                height={300}
+                className="object-cover w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* Shop Life */}
       <SectionWrapper className="!py-8 md:!py-10">
-        <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-8 items-center max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center max-w-4xl mx-auto">
           <div className="flex-1 space-y-4">
             <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif">
               A True Family Affair
@@ -165,34 +197,6 @@ export default function AboutPage() {
           </div>
         </SectionWrapper>
       </div>
-
-      {/* The Name */}
-      <SectionWrapper className="!py-8 md:!py-10">
-        <div className="max-w-2xl mx-auto text-center space-y-3">
-          <div className="w-14 h-14 mx-auto rounded-full overflow-hidden shadow-md border-3 border-white/60">
-            <Image
-              src="/images/four-peas-wreath-logo.jpg"
-              alt="Four Peas in a Pod Boutique wreath logo"
-              width={56}
-              height={56}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif">
-            Why &ldquo;Four Peas in a Pod&rdquo;?
-          </h2>
-          <p className="text-base md:text-lg text-[#2C2C22] leading-relaxed">
-            The name comes from the four women at the heart of it all — Jessi
-            Fentress, her mother Stephanie Slayton, Jessica Lowe, and Lindsey
-            Miller. Each brings something unique: Stephanie&apos;s experience
-            running her own business, Jessica&apos;s marketing expertise,
-            Lindsey&apos;s years running &ldquo;Little Stitches,&rdquo; and
-            Jessi&apos;s drive and vision. Together, they&apos;re four peas in
-            a pod — and that bond is what makes this boutique feel like more
-            than just a store.
-          </p>
-        </div>
-      </SectionWrapper>
 
       {/* CTA */}
       <section className="cta-gradient relative overflow-hidden rounded-3xl max-w-5xl mx-auto mb-8 px-6 py-10 md:py-12 text-center">

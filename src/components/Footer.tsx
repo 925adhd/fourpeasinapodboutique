@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579927267125";
 
@@ -12,8 +13,20 @@ export default function Footer() {
             <h3 className="text-lg md:text-xl font-bold mb-2 heading-serif">
               Four Peas in a Pod
             </h3>
-            <p className="text-white/85 text-sm leading-relaxed mb-3">
-              First responder owned. Right here in Leitchfield, Kentucky.
+            <div className="flex items-center gap-2 mb-3">
+              <Image
+                src="/images/star-of-life-ems-badge.png"
+                alt="Star of Life EMS badge"
+                width={20}
+                height={20}
+                className="opacity-90"
+              />
+              <p className="text-white/85 text-sm leading-relaxed">
+                First responder owned.
+              </p>
+            </div>
+            <p className="text-white/70 text-sm mb-3">
+              Right here in Leitchfield, Kentucky.
             </p>
             <a
               href={FACEBOOK_URL}
