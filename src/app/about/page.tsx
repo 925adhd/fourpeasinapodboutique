@@ -204,7 +204,7 @@ export default function AboutPage() {
           Come See Us
         </h2>
         <p className="text-white/95 mb-5 max-w-md mx-auto relative z-10">
-          We&apos;d love to meet you in person. Stop by the shop and say hello!
+          We&apos;d love to meet you in person. Stop by and&nbsp;say&nbsp;hello!
         </p>
         <Button href="/contact" variant="white" className="relative z-10">
           Get Directions

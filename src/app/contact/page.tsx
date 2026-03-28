@@ -30,7 +30,7 @@ export default function ContactPage() {
           className="blob-bg bg-[#C9A9A6] w-[250px] h-[180px] bottom-[-40px] left-[-30px]"
           style={{ position: "absolute" }}
         />
-        <div className="max-w-3xl mx-auto px-6 py-12 md:py-20 text-center relative z-10">
+        <div className="max-w-3xl mx-auto px-6 py-12 md:py-14 text-center relative z-10">
           <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#C9A9A6] mb-2">
             We&apos;d love to hear from you
           </p>
