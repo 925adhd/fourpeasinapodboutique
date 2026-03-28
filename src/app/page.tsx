@@ -275,6 +275,20 @@ export default function Home() {
         </SectionWrapper>
       </div>
 
+      {/* ───── STOREFRONT ───── */}
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="rounded-3xl overflow-hidden shadow-sm border border-[#f0e8e0]">
+          <Image
+            src="/images/storefront-valentines-snow.jpg"
+            alt="Four Peas in a Pod Boutique storefront in Leitchfield KY"
+            width={1200}
+            height={500}
+            className="w-full h-auto object-cover"
+            sizes="(max-width: 768px) 100vw, 1200px"
+          />
+        </div>
+      </div>
+
       {/* ───── VISIT US ───── */}
       <SectionWrapper>
         <div className="flex flex-col md:flex-row gap-8 items-start">

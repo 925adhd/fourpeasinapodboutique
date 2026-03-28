@@ -5,14 +5,14 @@ const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579927267125";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#7A8B74] text-white mt-16 rounded-t-3xl footer-premium">
-      <div className="max-w-5xl mx-auto px-6 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
+      <div className="max-w-5xl mx-auto px-6 py-10 md:py-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {/* Brand */}
-          <div className="md:col-span-1">
-            <h3 className="text-xl font-bold mb-3 heading-serif">
+          <div className="col-span-2 md:col-span-1">
+            <h3 className="text-lg md:text-xl font-bold mb-2 heading-serif">
               Four Peas in a Pod
             </h3>
-            <p className="text-white/85 text-sm leading-relaxed mb-5">
+            <p className="text-white/85 text-sm leading-relaxed mb-3">
               First responder owned. Right here in Leitchfield, Kentucky.
             </p>
             <a
@@ -37,10 +37,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] mb-4 text-white/60">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] mb-3 text-white/60">
               Quick Links
             </h4>
-            <nav className="flex flex-col gap-2.5 text-sm">
+            <nav className="flex flex-col gap-2 text-sm">
               <Link
                 href="/about"
                 className="text-white/80 hover:text-white transition-all duration-200 hover:translate-x-0.5"
@@ -64,10 +64,10 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] mb-4 text-white/60">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] mb-3 text-white/60">
               Store Hours
             </h4>
-            <div className="text-sm text-white/80 space-y-1.5">
+            <div className="text-sm text-white/80 space-y-1">
               <p>Tue – Fri: 10 AM – 6 PM</p>
               <p>Saturday: 10 AM – 4 PM</p>
               <p>Sun – Mon: Closed</p>
@@ -75,14 +75,14 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] mb-4 text-white/60">
+          <div className="col-span-2 md:col-span-1">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] mb-3 text-white/60">
               Visit Us
             </h4>
-            <address className="not-italic text-sm text-white/80 leading-relaxed space-y-1.5">
+            <address className="not-italic text-sm text-white/80 leading-relaxed space-y-1">
               <p>120 S English Street</p>
               <p>Leitchfield, KY 42754</p>
-              <p className="pt-1">
+              <p className="pt-0.5">
                 <a
                   href="tel:+12702303035"
                   className="hover:text-white transition-colors"
@@ -94,12 +94,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/15 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50">
+        <div className="border-t border-white/15 mt-8 md:mt-12 pt-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/50">
           <span>
             &copy; {new Date().getFullYear()} Four Peas in a Pod Boutique. All
             rights reserved.
           </span>
-          <span>Leitchfield, Kentucky</span>
+          <span>
+            Website by{" "}
+            <a
+              href="https://studio925.design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/70 hover:text-white transition-colors"
+            >
+              Studio 925
+            </a>
+          </span>
         </div>
       </div>
     </footer>
