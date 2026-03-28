@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/15 mt-6 pt-4 flex flex-row items-center justify-between text-[10px] text-white/40">
+        <div className="border-t border-white/15 mt-6 pt-4 flex flex-row items-center justify-between text-[10px] md:text-xs text-white/60">
           <span>&copy; {new Date().getFullYear()} Four Peas in a Pod Boutique</span>
           <span>
             Website by{" "}
@@ -81,7 +81,7 @@ export default function Footer() {
               href="https://studio925.design"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/55 hover:text-white transition-colors"
+              className="text-white/75 hover:text-white transition-colors"
             >
               Studio 925
             </a>
