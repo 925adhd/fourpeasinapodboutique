@@ -97,7 +97,7 @@ export default function CommunityPage() {
       </section>
 
       {/* Events Grid */}
-      <SectionWrapper>
+      <SectionWrapper className="fade-in-desktop-only">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {events.map((event, i) => (
             <Card

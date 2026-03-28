@@ -102,11 +102,9 @@ function FlowerSVG({ size, color }: { size: number; color: string }) {
 export default function FloatingPeas() {
   const [items, setItems] = useState<FallingItem[]>([]);
   const [visible, setVisible] = useState(true);
-  const [floor, setFloor] = useState("0px");
 
   useEffect(() => {
     const isMobile = window.innerWidth < 768;
-    setFloor(isMobile ? "56px" : "0px");
     const peaCount = isMobile ? 8 : 14;
     const flowerCount = isMobile ? 4 : 7;
     const generated: FallingItem[] = [];
@@ -149,10 +147,9 @@ export default function FloatingPeas() {
     <div
       className="fixed inset-0 z-50 pointer-events-none overflow-hidden"
       style={{
-        "--pea-floor": floor,
         opacity: visible ? 1 : 0,
         transition: "opacity 0.8s ease-out",
-      } as React.CSSProperties}
+      }}
     >
       {items.map((item) => (
         <div
