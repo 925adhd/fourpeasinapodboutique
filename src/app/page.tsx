@@ -28,14 +28,14 @@ export default function Home() {
           <h2 className="text-xl md:text-2xl font-semibold text-[#7A8B74] heading-serif text-center mb-6">
             Why People Love It Here
           </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-14 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-14 text-center">
             <div className="trust-item flex items-center gap-2.5 text-[#2C2C22]">
               <Heart className="w-5 h-5 text-[#7A8B74] fill-[#7A8B74] flex-shrink-0" />
               <span>Friendly, welcoming atmosphere</span>
             </div>
             <div className="trust-item flex items-center gap-2.5 text-[#2C2C22]">
               <ShoppingBag className="w-5 h-5 text-[#7A8B74] flex-shrink-0" />
-              <span>Unique pieces you won&apos;t find everywhere</span>
+              <span>Unique finds you&apos;ll love</span>
             </div>
             <div className="trust-item flex items-center gap-2.5 text-[#2C2C22]">
               <MapPin className="w-5 h-5 text-[#7A8B74] flex-shrink-0" />
