@@ -99,7 +99,7 @@ export default function CommunityPage() {
       {/* Events Grid */}
       <SectionWrapper>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {events.map((event) => (
+          {events.map((event, i) => (
             <Card
               key={event.title}
               className="text-left items-start p-0 overflow-hidden"
@@ -109,6 +109,7 @@ export default function CommunityPage() {
                   src={event.image}
                   alt={event.imageAlt}
                   fill
+                  priority={i < 2}
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
