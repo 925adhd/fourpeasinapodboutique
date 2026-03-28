@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MobileStickyBar from "../components/MobileStickyBar";
 import LocalBusinessSchema from "../components/LocalBusinessSchema";
+import PreviewBanner from "../components/PreviewBanner";
+import PreviewGate from "../components/PreviewGate";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,14 +78,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${playfair.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#F8F6F2] has-sticky-bar">
-        <LocalBusinessSchema />
-        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-[#2C2C22] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-md focus:text-sm focus:font-medium">
-          Skip to main content
-        </a>
-        <Navbar />
-        <main id="main" className="flex-1 pt-20">{children}</main>
-        <Footer />
-        <MobileStickyBar />
+        <PreviewGate>
+          <LocalBusinessSchema />
+          <PreviewBanner />
+          <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-[#2C2C22] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-md focus:text-sm focus:font-medium">
+            Skip to main content
+          </a>
+          <Navbar />
+          <main id="main" className="flex-1 pt-20" style={{ marginTop: "var(--banner-height, 0px)" }}>{children}</main>
+          <Footer />
+          <MobileStickyBar />
+        </PreviewGate>
       </body>
     </html>
   );

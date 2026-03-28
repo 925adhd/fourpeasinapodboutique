@@ -41,10 +41,11 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${
+        className={`fixed left-0 w-full z-40 transition-all duration-500 ${
           scrolled ? "navbar-scrolled" : "navbar-top"
         }`}
         style={{
+          top: "var(--banner-height, 0px)",
           borderBottomLeftRadius: "1.5rem",
           borderBottomRightRadius: "1.5rem",
         }}
