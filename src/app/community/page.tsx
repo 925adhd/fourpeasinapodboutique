@@ -82,11 +82,11 @@ export default function CommunityPage() {
           className="blob-bg bg-[#7A8B74] w-[250px] h-[200px] bottom-[-50px] right-[-40px]"
           style={{ position: "absolute" }}
         />
-        <div className="max-w-3xl mx-auto px-6 py-20 text-center relative z-10">
-          <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#C9A9A6] mb-3">
+        <div className="max-w-3xl mx-auto px-6 py-12 md:py-20 text-center relative z-10">
+          <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#C9A9A6] mb-2">
             Events &amp; Highlights
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#7A8B74] mb-4 heading-serif">
+          <h1 className="text-3xl md:text-5xl font-bold text-[#7A8B74] mb-2 md:mb-4 heading-serif">
             Community &amp; Events
           </h1>
           <p className="text-lg text-[#847770] max-w-xl mx-auto">
