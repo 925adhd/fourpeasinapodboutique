@@ -276,7 +276,7 @@ export default function Home() {
       </div>
 
       {/* ───── STOREFRONT ───── */}
-      <div id="visit" className="max-w-5xl mx-auto px-4">
+      <div id="visit" className="max-w-5xl md:max-w-3xl mx-auto px-4">
         <div className="rounded-3xl overflow-hidden shadow-sm border border-[#f0e8e0]">
           <Image
             src="/images/storefront-valentines-snow.jpg"

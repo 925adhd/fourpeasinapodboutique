@@ -42,6 +42,14 @@ export default function Button({
     );
   }
 
+  if (href && href.startsWith("#")) {
+    return (
+      <a href={href} className={`${base} ${className}`}>
+        {children}
+      </a>
+    );
+  }
+
   if (href) {
     return (
       <Link href={href} className={`${base} ${className}`}>

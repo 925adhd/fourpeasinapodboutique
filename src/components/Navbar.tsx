@@ -51,7 +51,7 @@ export default function Navbar() {
         }}
       >
         <div className="max-w-5xl mx-auto flex items-center justify-between py-3 px-6">
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); history.replaceState(null, "", "/"); }} className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#7A8B74]/20 group-hover:border-[#7A8B74]/50 transition-all duration-300 group-hover:shadow-md">
               <Image
                 src="/images/four-peas-wreath-logo.jpg"

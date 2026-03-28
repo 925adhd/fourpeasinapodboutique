@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 const PREVIEW_DURATION_MS = 24 * 60 * 60 * 1000; // 24 hours
 
@@ -17,8 +17,9 @@ function getTimeLeft(deployedAt: number) {
 export default function PreviewBanner() {
   const [timeLeft, setTimeLeft] = useState<string | null>(null);
   const [deployedAt, setDeployedAt] = useState<number | null>(null);
+  const bannerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    // Persist deploy timestamp so the 24h window survives refreshes
     const key = "preview_deployed_at";
     let ts = Number(localStorage.getItem(key));
     if (!ts) {
@@ -39,24 +40,22 @@ export default function PreviewBanner() {
     return () => clearInterval(id);
   }, [deployedAt]);
 
-  const bannerRef = useRef<HTMLDivElement>(null);
+  const updateHeight = useCallback(() => {
+    const el = bannerRef.current;
+    const h = el ? el.offsetHeight : 0;
+    document.documentElement.style.setProperty("--banner-height", `${h}px`);
+  }, []);
 
   useEffect(() => {
+    updateHeight();
     const el = bannerRef.current;
     if (!el) return;
-    const update = () => {
-      document.documentElement.style.setProperty("--banner-height", `${el.offsetHeight}px`);
-    };
-    update();
-    const observer = new ResizeObserver(update);
+    const observer = new ResizeObserver(updateHeight);
     observer.observe(el);
     return () => observer.disconnect();
-  }, [timeLeft]);
+  }, [timeLeft, deployedAt, updateHeight]);
 
-  if (deployedAt === null || timeLeft === null) {
-    document.documentElement.style.setProperty("--banner-height", "0px");
-    return null;
-  }
+  if (deployedAt === null || timeLeft === null) return null;
 
   return (
     <div ref={bannerRef} className="fixed top-0 inset-x-0 z-50 bg-[#2C2C22] text-white text-center text-sm font-medium shadow-lg">
@@ -67,11 +66,11 @@ export default function PreviewBanner() {
             Studio 925
           </a>
           .
-          <br />
-          Live viewing expires in{" "}
+          <br className="md:hidden" />
+          {" "}Live viewing expires in{" "}
           <span className="font-mono tabular-nums">{timeLeft}</span>.
-          <br />
-          Files are kept for 14&nbsp;days.
+          <br className="md:hidden" />
+          {" "}Files are kept for 14&nbsp;days.
         </p>
       </div>
     </div>

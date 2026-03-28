@@ -10,6 +10,10 @@
   --curve-radius: 2rem;
 }
 
+html {
+  scroll-padding-top: calc(var(--banner-height, 0px) + 5.5rem);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

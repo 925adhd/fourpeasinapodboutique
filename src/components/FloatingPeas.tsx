@@ -145,7 +145,7 @@ export default function FloatingPeas() {
 
   return (
     <div
-      className="fixed inset-0 z-50 pointer-events-none overflow-hidden"
+      className="fixed inset-0 bottom-[3.25rem] md:bottom-0 z-50 pointer-events-none overflow-hidden"
       style={{
         opacity: visible ? 1 : 0,
         transition: "opacity 0.8s ease-out",
