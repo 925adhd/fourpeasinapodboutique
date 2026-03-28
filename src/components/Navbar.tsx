@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -28,6 +28,20 @@ export default function Navbar() {
     };
   }, [menuOpen]);
 
+  const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = navRef.current;
+    if (!el) return;
+    const update = () => {
+      document.documentElement.style.setProperty("--nav-height", `${el.offsetHeight}px`);
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -41,6 +55,7 @@ export default function Navbar() {
   return (
     <>
       <nav
+        ref={navRef}
         className={`fixed left-0 w-full z-40 transition-all duration-500 ${
           scrolled ? "navbar-scrolled" : "navbar-top"
         }`}
