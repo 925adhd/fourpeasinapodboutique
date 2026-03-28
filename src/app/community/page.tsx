@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const events = [
   {
-    title: "GC Cougars State Send-Off",
+    title: "GC Cougars State Send\u2011Off",
     date: "March 2026",
     desc: "When the Grayson County Cougars headed to state, we painted our windows with paw prints and basketballs to cheer them on. Supporting our local teams is what community is all about — go Cougars!",
     image: "/images/gc-cougars-state-storefront.jpg",
@@ -116,10 +116,10 @@ export default function CommunityPage() {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#7A8B74] bg-[#7A8B74]/10 px-3 py-1 rounded-full">
+                  <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[#7A8B74] bg-[#7A8B74]/10 px-3 py-1 rounded-full whitespace-nowrap">
                     {event.tag}
                   </span>
-                  <span className="text-sm text-[#847770]">{event.date}</span>
+                  <span className="text-sm text-[#847770] whitespace-nowrap">{event.date}</span>
                 </div>
                 <h2 className="text-xl font-semibold text-[#2C2C22] mb-2">
                   {event.title}
