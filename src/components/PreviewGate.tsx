@@ -3,19 +3,15 @@
 import { useState, useEffect } from "react";
 import PreviewExpired from "./PreviewExpired";
 
-const PREVIEW_DURATION_MS = 24 * 60 * 60 * 1000;
+// March 30, 2026 10:00 AM Central (UTC-5)
+const PREVIEW_START = new Date("2026-03-30T10:00:00-05:00").getTime();
+const PREVIEW_END = PREVIEW_START + 24 * 60 * 60 * 1000;
 
 export default function PreviewGate({ children }: { children: React.ReactNode }) {
   const [expired, setExpired] = useState(false);
 
   useEffect(() => {
-    const key = "preview_deployed_at";
-    let ts = Number(localStorage.getItem(key));
-    if (!ts) {
-      ts = Date.now();
-      localStorage.setItem(key, String(ts));
-    }
-    const remaining = ts + PREVIEW_DURATION_MS - Date.now();
+    const remaining = PREVIEW_END - Date.now();
     if (remaining <= 0) {
       setExpired(true);
       return;

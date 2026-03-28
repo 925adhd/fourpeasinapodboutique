@@ -2,12 +2,6 @@ export default function PreviewExpired() {
   return (
     <div className="min-h-screen bg-[#F8F6F2] flex flex-col items-center justify-center px-6 text-center">
       <div className="max-w-lg">
-        <div className="mb-8">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#2C2C22] text-white text-3xl mb-6">
-            9
-          </div>
-        </div>
-
         <h1 className="text-4xl md:text-5xl font-bold text-[#2C2C22] mb-4 font-[family-name:var(--font-playfair)]">
           Preview Expired
         </h1>
