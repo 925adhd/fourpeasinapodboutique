@@ -79,7 +79,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${playfair.variable} h-full antialiased`}>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/four-peas-wreath-logo.jpg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
         <meta name="theme-color" content="#4CAF50" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
