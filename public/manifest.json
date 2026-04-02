@@ -1,0 +1,30 @@
+{
+  "name": "Four Peas in a Pod Boutique",
+  "short_name": "Four Peas",
+  "description": "Children's clothing, maternity, plus-size, gifts, and more in Leitchfield, KY.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F6F2",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/four-peas-heart-logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/four-peas-heart-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/four-peas-wreath-logo.jpg",
+      "sizes": "180x180",
+      "type": "image/jpeg",
+      "purpose": "apple touch icon"
+    }
+  ]
+}
