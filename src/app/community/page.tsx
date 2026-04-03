@@ -181,7 +181,7 @@ export default function CommunityPage() {
       </SectionWrapper>
 
       {/* Social CTA */}
-      <section className="bg-[#9E7E7B] rounded-3xl max-w-5xl mx-auto my-10 px-6 py-16 text-center">
+      <section className="bg-[#9E7E7B] rounded-3xl max-w-6xl mx-auto my-10 px-5 sm:px-8 lg:px-12 py-16 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 heading-serif">
           Follow the Fun
         </h2>

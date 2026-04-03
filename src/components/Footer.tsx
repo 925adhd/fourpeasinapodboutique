@@ -6,7 +6,7 @@ const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579927267125";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#7A8B74] text-white mt-16 rounded-t-3xl footer-premium">
-      <div className="max-w-5xl mx-auto px-6 py-8 md:py-12">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12 py-8 md:py-12">
         {/* Top row: Brand + Links/Hours/Address all in one tight grid */}
         <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-10">
           {/* Brand */}

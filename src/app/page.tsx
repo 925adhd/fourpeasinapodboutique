@@ -276,7 +276,7 @@ export default function Home() {
       </div>
 
       {/* ───── STOREFRONT ───── */}
-      <div id="visit" className="max-w-5xl md:max-w-3xl mx-auto px-4">
+      <div id="visit" className="max-w-6xl md:max-w-3xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="rounded-3xl overflow-hidden shadow-sm border border-[#f0e8e0]">
           <Image
             src="/images/storefront-valentines-snow.jpg"
@@ -337,7 +337,7 @@ export default function Home() {
       </SectionWrapper>
 
       {/* ───── FINAL CTA ───── */}
-      <section className="cta-gradient relative overflow-hidden rounded-3xl max-w-5xl mx-auto my-10 px-6 py-10 md:py-14 text-center">
+      <section className="cta-gradient relative overflow-hidden rounded-3xl max-w-6xl mx-auto my-10 px-5 sm:px-8 lg:px-12 py-10 md:py-14 text-center">
         <div
           className="blob-bg bg-white w-[400px] h-[300px] top-[-100px] right-[-100px]"
           style={{ position: "absolute", opacity: 0.08 }}

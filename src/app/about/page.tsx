@@ -52,7 +52,7 @@ export default function AboutPage() {
 
       {/* Origin Story */}
       <SectionWrapper className="!py-8 md:!py-10">
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
           <div className="flex-1 space-y-4">
             <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif">
               Built on Inspiration
@@ -90,7 +90,7 @@ export default function AboutPage() {
 
       {/* The Founders */}
       <SectionWrapper className="!py-8 md:!py-10">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row-reverse gap-6 md:gap-8 items-center">
+        <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-8 items-center">
           <div className="flex-1 space-y-3 text-center md:text-left">
             <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif">
               Why &ldquo;Four Peas in a Pod&rdquo;?
@@ -122,7 +122,7 @@ export default function AboutPage() {
 
       {/* Shop Life */}
       <SectionWrapper className="!py-8 md:!py-10">
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
           <div className="flex-1 space-y-4">
             <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif">
               A True Family Affair
@@ -160,7 +160,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif text-center mb-6">
             Inside the Shop
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto mb-10 md:mb-14">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10 md:mb-14">
             {[
               { src: "/images/valentines-day-gifts-display.jpg", alt: "Valentine's Day gifts and seasonal displays" },
               { src: "/images/handmade-crochet-plushies.jpg", alt: "Handmade crochet plushie animals" },
@@ -182,7 +182,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-[#7A8B74] heading-serif text-center mb-6">
             What We Believe In
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Community First", text: "Leitchfield is home. We support local, shop local, and lift up our neighbors every chance we get." },
               { title: "Real Relationships", text: "We know our customers by name. That personal connection is what makes us different." },
@@ -199,7 +199,7 @@ export default function AboutPage() {
       </div>
 
       {/* CTA */}
-      <section className="cta-gradient relative overflow-hidden rounded-3xl max-w-5xl mx-auto mb-8 px-6 py-10 md:py-12 text-center">
+      <section className="cta-gradient relative overflow-hidden rounded-3xl max-w-6xl mx-auto mb-8 px-5 sm:px-8 lg:px-12 py-10 md:py-12 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 heading-serif relative z-10">
           Come See Us
         </h2>

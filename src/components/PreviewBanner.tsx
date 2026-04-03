@@ -51,7 +51,7 @@ export default function PreviewBanner() {
 
   return (
     <div ref={bannerRef} className="fixed top-0 inset-x-0 z-50 bg-yellow-400 text-black text-center text-sm font-medium shadow-lg">
-      <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center justify-center gap-3 flex-wrap">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12 py-2.5 flex items-center justify-center gap-3 flex-wrap">
         <p>
           Not the official website. This is a demo preview built by{" "}
           <a href="https://studio925.design" target="_blank" rel="noopener noreferrer" className="underline hover:text-black/70">

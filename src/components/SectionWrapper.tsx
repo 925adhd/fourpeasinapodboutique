@@ -33,7 +33,7 @@ export default function SectionWrapper({
     <section
       ref={ref}
       id={id}
-      className={`max-w-5xl mx-auto px-4 py-14 md:py-20 fade-in ${visible ? "visible" : ""} ${className}`}
+      className={`max-w-6xl mx-auto px-5 sm:px-8 lg:px-12 py-14 md:py-20 fade-in ${visible ? "visible" : ""} ${className}`}
     >
       {children}
     </section>
