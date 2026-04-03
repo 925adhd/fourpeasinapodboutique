@@ -59,16 +59,12 @@ export default function PreviewBanner() {
           </a>
           .
           <br className="md:hidden" />
-          {showCountdown ? (
+          {showCountdown && (
             <>
               {" "}Live viewing expires in{" "}
               <span className="font-mono tabular-nums">{timeLeft}</span>.
             </>
-          ) : (
-            <>{" "}Live viewing expires after 24 hours.</>
           )}
-          <br className="md:hidden" />
-          {" "}Files are kept for 14&nbsp;days.
         </p>
       </div>
     </div>
