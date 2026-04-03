@@ -50,11 +50,11 @@ export default function PreviewBanner() {
   const showCountdown = timeLeft !== null && timeLeft !== "not_started";
 
   return (
-    <div ref={bannerRef} className="fixed top-0 inset-x-0 z-50 bg-[#2C2C22] text-white text-center text-sm font-medium shadow-lg">
+    <div ref={bannerRef} className="fixed top-0 inset-x-0 z-50 bg-yellow-400 text-black text-center text-sm font-medium shadow-lg">
       <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center justify-center gap-3 flex-wrap">
-        <p className="text-yellow-400">
+        <p>
           Not the official website. This is a demo preview built by{" "}
-          <a href="https://studio925.design" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-300">
+          <a href="https://studio925.design" target="_blank" rel="noopener noreferrer" className="underline hover:text-black/70">
             Studio 925
           </a>
           .
